@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="screen-orientation" content="portrait">
+  <title>抢汽油</title>
+  <link rel="stylesheet" href="static/css/main.css">
+  <script src="static/js/wx.js"></script>
+  <script src="static/js/zepto.min.js"></script>
+</head>
+<body>
+<div id="container">
+  <div id="guidePanel"></div>
+  <div id="gamepanel">
+    <div class="score-wrap">
+      <div class="heart"></div>
+      <span id="score">0</span>
+    </div>
+    <canvas id="stage" width="320" height="568"></canvas>
+  </div>
+  <div id="gameoverPanel"></div>
+  <div id="resultPanel">
+    <div class="weixin-share"></div>
+    <a href="javascript:void(0);" class="replay"></a>
+    <div id="fenghao"></div>
+    <div id="scorecontent">
+      您在<span id="stime" class="lighttext">2888</span>秒内准确抢了 <span id="sscore" class="lighttext">88</span>桶油<br>
+      超过了<span id="suser" class="lighttext">88%</span>的用户!
+    </div>
+    <div class="textc">
+      <span class="btn1 share">请小伙伴来抢油</span>
+    </div>
+  </div>
+</div>
+
+<script src="static/js/app.js"></script>
+</body>
+</html>
